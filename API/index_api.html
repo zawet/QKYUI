@@ -1,0 +1,525 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="icon" href="qky2.ico">
+<title>全课云UI</title>
+<!--框架css-->
+<link href="bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/common_3.2.css" rel="stylesheet" type="text/css"/>
+<link href="css/apipc.css" rel="stylesheet" type="text/css"/>
+<link href="css/qkybase1.3.css" rel="stylesheet" type="text/css"/>
+
+
+<!--公共js-->
+<script language="JavaScript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/code.js"></script>
+<script src="bootstrap/3.3.0/js/bootstrap.min.js" type="text/javascript"></script>
+<!--插件js-->
+</head>
+<body class="apibody">
+
+<!--顶部-->
+<div class="qky_header">
+  <div class="header1">
+    <div class="qky_top_box clear3">
+        <ul class="qky_top_navs wd_100">
+        	<li><img src="images/nav_logo/logoUI.png" width="120" height="46"></li>
+            <li><a href="index.html" class=" fz_16 cur">上手指南</a></li>
+            <li class="active"><a href="index_api.html" class=" fz_16">使用手册API</a></li>
+            <li><a href="index_webdesign.html" class=" fz_16">页面设计规范</a></li>
+            <li><a href="index_qa.html" class=" fz_16">Q&A </a></li>
+        </ul>         
+    </div>
+  </div>
+</div>
+
+<!--中部-->
+<div class="qky_content">
+  <div class="qky_main ">
+  
+  <div class="api_zt wd_80 ">
+  	<div class="main_bg brra_8 mb16">
+        <h1 id="frist" class="t_c fz_24"><b>概览</b></h1>
+        <div class="api_so one">
+            <h2 id="style"><b>布局的统一性</b></h2>
+            <div class="api_so two">
+            	<div class="api_k mt10">
+                <span class="iskuai lh28">模块化每一块布局，头底部化标准化后，中间进行栅格布局。</span>
+    			<span class="iskuai lh28">大布局分为：居中式（中间1080px显示）、全屏左右式（自由定义左右比例）</span>
+                </div>
+            </div>
+            <h2 id="html"><b>前端的统一性</b></h2>
+            <div class="api_so two">
+            	<div class="api_k mt10">
+                <span class="iskuai lh28">通过统一的html结构（dom树）；</span>
+                <span class="iskuai lh28">css在基础ui上规范后进行扩展；</span>
+                <span class="iskuai lh28">js模块分为：
+                <br/>全局公用模块（每个应用都会用到的模块，如：头部导航）存放在<span class="qkycode inbock">dist/comjs</span>、
+                <br/>基础模块（ui基础的交互，交互加强，如：按钮事件，下拉菜单事件，上传等）存放在<span class="qkycode inbock">js/common_cadr</span>、
+                <br/>特殊模块（单一应用里特有的js交互）存放在<span class="qkycode inbock">js/special_cadrX_X</span>；
+                </span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+  	<div class="main_bg brra_8 mb16">
+        <h1 id="iconfont"><b>1.图标字体iconfont</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        
+            <h2 id="if_in"><b>1.1.图标字体来源和获取</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+                <div class="api_k">
+                	
+                    <div class="api_explain pa_16">
+                   	<span class="lh28 iskuai">图标都进行了图标字体化，来源于阿里巴巴旗下的<a href="http://www.iconfont.cn/" target="_blank">iconfont</a>，图标字体库获取步骤:</span>
+                    
+                    <h3>1.1.1.进入<a href="http://www.iconfont.cn/" target="_blank">iconfont</a>进行登录；
+                    <span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span>
+                    </h3>
+                    <div class="mt6 mb16"><a href="images/iconfont1.jpg" target="_blank"><img src="images/iconfont1.jpg" class="wd_100"></a></div>
+                    
+                    <h3>1.1.2.把账户名告知<a href="#">@zawet（QQ：471032682）</a>，进入指定的共享图标库；
+                    <span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span>
+                    </h3>
+                    <div class="mt6 mb16"><a href="images/iconfont2.png" target="_blank"><img src="images/iconfont2.png" class="wd_100"></a></div>
+                    
+                    <h3>1.1.3.进入共享库后在我参与的项目里查看加入的库；
+                    <span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span>
+                    </h3>
+                    <div class="mt6 mb16"><a href="images/iconfont3.png" target="_blank"><img src="images/iconfont3.png" class="wd_100"></a></div>
+                    
+                    <h3>1.1.4.在指定的库里获取在线测试地址或者直接下载字体包；
+                    <span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span>
+                    </h3>
+                    <div class="mt6 mb16"><a href="images/iconfont4.png" target="_blank"><img src="images/iconfont4.png" class="wd_100"></a></div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <h2 id="if_use"><b>1.2.了解图标字体并使用</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>1.2.1.图标字体库以及新增图标说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain ">
+                   	<span class="iskuai lh28">
+                    暂时按照图标的大小和色彩，粗细，填充分6个库，分别是：
+                    <span class="qkycode inbock">qkyicon_color</span>,
+                    <span class="qkycode inbock">qkyicon_12</span>,
+                    <span class="qkycode inbock">qkyicon_14</span>,
+                    <span class="qkycode inbock">qkyicon_20</span>,
+                    <span class="qkycode inbock">qkyicon_22</span>,
+                    <span class="qkycode inbock">qkyicon_100</span>.
+                    <span class="iskuai">图标的选择按需选择，全部图标已经在css上架设好了，并且支持添加图标，在iconfont.com的自我账号里可以搜索其他图标加入到对应的库。</span>
+                    如何添加图标教程：
+                    <span class="iskuai">1.搜索图标，选好图标加入购物车；</span>
+                    <a class="iskuai" href="images/iconfont7.png" target="_blank"><img src="images/iconfont7.png" class="wd_100"></a>
+                    <span class="iskuai">2.在购物车上把图标加到要加的项目里；</span>
+                    <a class="iskuai" href="images/iconfont8.png" target="_blank"><img src="images/iconfont8.png"></a>
+                    图标添加的两个要求：
+                    <span class="iskuai">1、不能在同一个库里添加看上去不是一套的图标；（比如qkyicon_14中的图标都是半粗细的线条图标，所以不能添加填充式或者粗线条的图标）</span>
+                    <span class="iskuai">2、同一个功能使用的图标也不能出现两个；（比如一个库里不能出现两个“x”图标）</span>
+                    </span>
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>1.2.2.图标字体库架设<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3> 
+                    <div class="api_explain pt10">
+                    <div class="lh30 fz_16 co_css">特别说明，以下是架设图标字体库的方法，但在初始文件里，所有共享库都在iconfont.css里搭建好了，并进行了本地化，这里给出搭建教程是为了让大家方便在添加了图标后进行更新本地化！</div>
+                        <span class="fz_we fz_16 iskuai lh34">测试模式，[方便调整和添加新图标]</span>
+                        <div class="mb16"> 
+                        <span class="pt16 fz_16">1,直接复制对应库的线上测试地址</span>
+                        <a class=" iskuai" href="images/iconfont5.png" target="_blank"><img src="images/iconfont5.png" class="wd_100"></a>
+                        
+                        <span class="pt16 fz_16">2,把地址粘贴到<span class="qkycode inbock">css/iconfont.css</span>上，并新建css样式，如下</span>
+                        <span class="qkycode">
+                        .qkyicon_14 {
+                              font-family:"qkyicon_14" !important;
+                              font-size:14px;
+                              font-style:normal;
+                              -webkit-font-smoothing: antialiased;
+                             /*-webkit-text-stroke-width: 0.2px;*/
+                              -moz-osx-font-smoothing: grayscale;
+                            }
+                        </span>
+                        其中的<span class="qkycode inbock">font-family:"qkyicon_14" </span>要跟@font-face里的一样，这样就完成了一个字体库的架设。
+                        </div>
+                        <span class="fz_we fz_16 iskuai lh34">本地化模式，[上线节省资源]</span>
+                        <div class="">
+                        在iconfont.com的对应公用库上点击下载，下载解压后，把里面的所有文件覆盖<span class="qkycode inbock">iconfont</span>文件夹下对应库的所有文件，再把链接地址链接到本地，就实现了图标本地化了！
+                        </div>
+                    </div> 
+                </div>
+                <div class="api_k">
+                    <h3>1.2.3.图标使用<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pt16">
+                    架设好图标字体库后，在iconfont.com字体库上复制图标的代码
+                    <a href="images/iconfont6.png" target="_blank"><img src="images/iconfont6.png"  class="wd_100"/></a>
+                    然后通过<span class="qkycode inbock"><i></i></span>标签进行图标显示，如：
+                    <span class="qkycode inbock"><i class="qkyicon_14">&#xe619;</i></span>
+                    代码放在中间，引用的哪个库的图标就引用哪个class，这里我引用的是：<span class="qkycode inbock">qkyicon_14</span>库的，所以class引用如：<span class="qkycode inbock">class="qkyicon_14"</span>;<br/>
+                    此<span class="qkycode inbock"><i></i></span>标签就跟一个中文字串一样，可以放在任何地方；
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div> 
+    </div>
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="button"><b>2.按钮UI</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        	<div class="lh30 fz_16 co_css">特别说明，按钮基础ui由bootstrap提供基础样式，详细查阅<a href="http://v3.bootcss.com/css/#buttons" target="_blank">http://v3.bootcss.com/css/#buttons</a>, 这里只简要说明按钮的样式和大小以及自主覆盖了一些bootstrap样式的地方。</div>
+        	<h2 id="button_style"><b>2.1.按钮样式</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>2.1.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	在按钮样式里，自主新增了一个主色调样式按钮，尊随主色调颜色。
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.2.按钮演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	<button type="button" class="btn btn-mian">（主色调样式）mian</button>
+                        <!-- Standard button -->
+                        <button type="button" class="btn btn-default">（默认样式）Default</button>
+                        
+                        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                        <button type="button" class="btn btn-primary">（首选项）Primary</button>
+                        
+                        <!-- Indicates a successful or positive action -->
+                        <button type="button" class="btn btn-success">（成功）Success</button>
+                        
+                        <!-- Contextual button for informational alert messages -->
+                        <button type="button" class="btn btn-info">（一般信息）Info</button>
+                        
+                        <!-- Indicates caution should be taken with this action -->
+                        <button type="button" class="btn btn-warning">（警告）Warning</button>
+                        
+                        <!-- Indicates a dangerous or potentially negative action -->
+                        <button type="button" class="btn btn-danger">（危险）Danger</button>
+                        
+                        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+                        <button type="button" class="btn btn-link">（链接）Link</button>
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.3.按钮样式代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div>
+            </div>
+            
+            <h2 id="button_size"><b>2.2.按钮大小</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>2.2.1.按钮大小说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	<span class="iskuai">bs注明：需要让按钮具有不同尺寸吗？使用 .btn-lg、.btn-sm 或 .btn-xs 就可以获得不同尺寸的按钮。</span>
+                    <span>自主样式上有可以设置最小宽度限制，<span class="qkycode inbock">.btn</span>上加<span class="qkycode inbock">.qkybtn</span>样式就会形成一个宽度最小为80px的按钮</span>
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.2.2.按钮大小演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	<p>
+                          <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+                          <button type="button" class="btn btn-default btn-lg">（大按钮）Large button</button>
+                        </p>
+                        <p>
+                          <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+                          <button type="button" class="btn btn-default">（默认尺寸）Default button</button>
+                        </p>
+                        <p>
+                          <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+                          <button type="button" class="btn btn-default btn-sm">（小按钮）Small button</button>
+                        </p>
+                        <p>
+                          <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+                          <button type="button" class="btn btn-default btn-xs">（超小尺寸）Extra small button</button>
+                        </p>
+                        <p>
+                          <button type="button" class="btn btn-primary qkybtn">最小宽度为80px</button>
+                          <button type="button" class="btn btn-default qkybtn">最小宽度为80px</button>
+                        </p>
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.3.按钮大小代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div>
+            </div>
+            
+            
+        </div> 
+    </div>
+    
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="form"><b>3.表单元素</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+            <h2 id="input"><b>3.1.输入框</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>2.1.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3">
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+            
+            <h2 id="textarea"><b>3.2.编辑框</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>2.1.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3">
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>2.1.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+            
+            <h2 id="radio"><b>3.3.单选/组</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>3.3.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.3.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.3.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+            
+            <h2 id="checkbox"><b>3.4.复选/组</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>3.4.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.4.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo pt16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.4.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+            <h2 id="select"><b>3.5.下拉菜单</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>3.5.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.5.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.5.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+            
+            <h2 id="input_select"><b>3.6.输入下拉菜单</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>3.6.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.6.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                        
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>3.6.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+    
+    
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="mask"><b>4.弹窗</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        	<h2 id="mask_best"><b>4.1.弹窗基础</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>4.1.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>4.1.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>4.1.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div>
+            </div>
+            
+        </div> 
+    </div>
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="table"><b>5.表格</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        	<h2 id="tabel_hline"><b>5.1.有线框</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>5.1.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>5.1.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>5.1.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div>
+            </div>
+            <h2 id="tabel_nline"><b>5.2.无线框</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>5.2.1.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>5.2.2.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>7.2.3.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="page"><b>6.分页</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        	<h2 id="page_besa"><b>6.1.分页基础</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                	<h3>6.1.3.说明<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+            	<div class="api_k">
+                    <h3>6.1.1.演示<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_demo clear3 pt16">
+                    	
+                    </div>
+                </div>
+                <div class="api_k">
+                    <h3>6.1.2.代码<span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h3>
+                    <div class="api_code"></div>
+                </div> 
+            </div> 
+        </div> 
+    </div>
+    
+    <div class="main_bg brra_8 mb16">
+        <h1 id="inend"><b>后续</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h1>
+        <div class="api_so one">
+        	<h2 id="inend_bug"><b>后续问题汇总</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+            </div> 
+            
+            <h2 id="inend_edition"><b>版本更新说明</b><span class="po_ab_r iskuai pr16 co_bl iconup"><i class="qkyicon isinku trn">&#xe646;</i></span></h2>
+            <div class="api_so two">
+            	<div class="api_k">
+                    <div class="api_explain pa_16">
+                   	
+                    </div>
+                </div>
+            </div> 
+            
+        </div> 
+    </div>
+    
+
+  </div>
+  
+  <div class="api_nav box_b pl14">
+      <div class="qky_njnav  wd_100 api_r"></div>
+  </div>
+  
+  </div>
+</div>
+
+<!--底部-->
+<div class="qky_footer">
+  <div>全通教育集团（广东）股份有限公司  版权所有  ©2007-2015</div>
+</div>
+<script src="js/api.js" type="text/javascript"></script> 
+</body>
+</html>
